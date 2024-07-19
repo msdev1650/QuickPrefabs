@@ -1,6 +1,3 @@
-Here's a comprehensive README file for your QuickPrefabs project, based on the structure and style of the AIMergerTool README you provided:
-
-```markdown
 # QuickPrefabs
 
 QuickPrefabs is a Unity Editor extension that enhances productivity by providing a quick and simple way to find and select GameObjects in your Unity projects. This tool allows users to create a customizable list of prefabs and scene objects for easy access and selection.
@@ -65,6 +62,4 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 ## Disclaimer
 
 This tool is an editor extension for Unity. Ensure you comply with Unity's terms of service and best practices when using this tool in your projects.
-```
 
-This README provides a comprehensive overview of your QuickPrefabs tool, including installation instructions, usage guide, and other relevant information. You can further customize it as needed to better fit your project's specifics.
