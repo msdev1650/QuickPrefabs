@@ -2,7 +2,7 @@
 
 QuickPrefabs is a Unity Editor extension that enhances productivity by providing a quick and simple way to find and select GameObjects in your Unity projects. This tool allows users to create a customizable list of prefabs and scene objects for easy access and selection.
 
-![2](https://github.com/user-attachments/assets/1d9a7ade-e2d9-4d64-ab46-b9bec96b696b)
+![2_edit](https://github.com/user-attachments/assets/00393a71-a32e-46f4-8b81-01acfa49343e)
 
 ## Features
 
