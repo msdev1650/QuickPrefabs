@@ -1,81 +1,69 @@
 # QuickPrefabs
 
-QuickPrefabs is a productivity tool for Unity that provides a powerful GUI application for quickly selecting and managing prefabricated GameObjects in your scene. This tool allows users to easily find and select GameObjects either instantiated in the scene or stored as prefabs in the asset folder.
+QuickPrefabs is a productivity tool for Unity developers, designed to simplify and speed up the process of finding and selecting GameObjects in your Unity projects. This custom editor window allows for quick access to frequently used prefabs and scene objects, enhancing workflow efficiency.
 
 ## Features
 
-- User-friendly Unity Editor interface
-- Quick selection of prefabs for efficient scene management
-- Reorderable list for organizing prefab paths
-- Direct selection of GameObjects in the scene or from the asset folder
-- Supports easy editing of prefab paths
-- Automatically saves changes to the prefab list
+- Custom Unity Editor Window
+- Persistent prefab list using ScriptableObjects
+- Drag-and-drop functionality for adding prefabs
+- Quick selection of objects in the scene or project
+- Reorderable list for easy management of prefabs
+- Automatic saving of changes
+- Support for both scene objects and project assets
 
 ## Installation
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/QuickPrefabs.git
+1. Clone the repository or download the ZIP file:
 
 
-Open the project in Unity.
-
-
-Place the PrefabQuickSelectData.cs and QuickSelectWindow.cs scripts into your Unity project's Assets folder.
-
-
-Create a new PrefabListData ScriptableObject through the Unity Editor by navigating to:
-Create > QuickSelect > PrefabListData.
-
-
-Add prefabs to the list using the Quick Prefabs window.
+git clone https://github.com/yourusername/QuickPrefabs.git
 
 
 
-Usage
 
+2. Copy the `QuickPrefabs` folder into your Unity project's `Assets` directory.
 
-Open the Quick Prefabs window from the Unity Editor menu:
+3. Ensure all scripts are in the correct location within your Unity project.
 
+## Usage
 
-Window > Quick Prefabs
+1. Open the QuickPrefabs window by navigating to `Window > Quick Prefabs` in the Unity menu.
 
-Use the "Quick Prefabs" window to view, edit, and manage your list of prefab paths.
+2. To add a prefab or scene object:
+   - Drag and drop the object from your Project window or Hierarchy into the QuickPrefabs list.
+   - Alternatively, use the '+' button at the bottom of the list to add a new entry, then assign an object using the object field.
 
+3. To select an object:
+   - Click the "Select" button next to the object in the list.
+   - If the object is in the scene, it will be selected in the Hierarchy.
+   - If it's a prefab, it will be selected in the Project window.
 
-Select a prefab from the list to find it instantly in your scene or asset folder.
+4. To reorder the list:
+   - Use the drag handles on the left side of each entry to reorder items.
 
+5. To remove an item:
+   - Use the '-' button at the bottom of the list when an item is selected.
 
-Use the "Select" button next to each prefab to set the active GameObject in the scene.
+## Configuration
 
+- The prefab list data is stored in a ScriptableObject located at `Assets/MSCreativeTech/QuickPrefabs/PrefabListData.asset`.
+- This file is automatically created if it doesn't exist when the QuickPrefabs window is opened for the first time.
 
+## Troubleshooting
 
-Configuration
+- If prefabs are not appearing in the list, ensure that the `PrefabListData.asset` file exists and is not corrupted.
+- For scene objects that are not being found, check if they are active in the scene and not hidden by Unity's built-in hiding mechanisms.
 
+## Contributing
 
-The prefab paths are stored in a ScriptableObject (PrefabListData). You can create and manage this object directly within the Unity Editor.
+Contributions to QuickPrefabs are welcome! Please feel free to submit a Pull Request or open an Issue for any bugs or feature requests.
 
+## License
 
-Troubleshooting
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Acknowledgments
 
-Ensure that prefabs are correctly referenced in your list. If a prefab path does not lead to a valid prefab, errors may occur.
-
-Check the Unity Console for any error messages if the Quick Prefabs window is not functioning as expected.
-
-
-Contributing
-
-Contributions to QuickPrefabs are welcome! Please feel free to submit a Pull Request.
-
-
-License
-
-This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
-
-
-Disclaimer
-
-This tool is designed as a productivity aid for managing prefabs in Unity. It is not affiliated with or endorsed by Unity Technologies.
-
+- Unity Technologies for the powerful Unity Editor API
+- The Unity community for inspiration and support in creating editor tools
