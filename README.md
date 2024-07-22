@@ -18,7 +18,7 @@ QuickPrefabs is a Unity Editor extension that enhances productivity by providing
 
 1. Clone the repository:
 ```
-git clone https://github.com/yourusername/QuickPrefabs.git
+git clone https://github.com/msdev1650/QuickPrefabs.git
 ```
 
 2. Copy the `QuickPrefabs` folder into your Unity project's `Assets` directory.
